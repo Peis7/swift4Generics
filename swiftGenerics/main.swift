@@ -8,10 +8,10 @@
 
 import Foundation
 
-func swap<T>( a genericFirstParammeter:inout T, b genericSecondParammeter:inout T){
-    let temp:T = genericFirstParammeter
-    genericFirstParammeter = genericSecondParammeter
-    genericSecondParammeter = temp
+func swap<T>( firstElement :inout T, secondElement :inout T){
+    let temp:T = firstElement
+    firstElement = secondElement
+    secondElement = temp
 }
 
 var a:String = "Hola"
