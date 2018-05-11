@@ -8,5 +8,15 @@
 
 import Foundation
 
-print("Hello, World!")
+func swap<T>( a genericFirstParammeter:inout T, b genericSecondParammeter:inout T){
+    let temp:T = genericFirstParammeter
+    genericFirstParammeter = genericSecondParammeter
+    genericSecondParammeter = temp
+}
 
+var a:String = "Hola"
+var b:String = "mundo"
+
+swap(&a, &b)
+print(a)
+print(b)
